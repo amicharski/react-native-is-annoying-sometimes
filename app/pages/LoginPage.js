@@ -2,7 +2,7 @@ import styler from './LoginPage.style';
 
 import { StyleSheet } from 'react-native';
 
-export default LoginPage = () => {
+const LoginPage = () => {
   return (
     <View>
       <View style={styler.container}>
@@ -151,3 +151,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
+
+export default LoginPage;

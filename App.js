@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { useFonts } from 'expo-font';
 import { Stack, SplashScreen } from 'expo-router';
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, SafeAreaView, Text } from 'react-native';
 import LoginPage from './app/pages/LoginPage';
 
 export default function App() {
@@ -21,8 +21,9 @@ export default function App() {
   }, [fontsLoaded]);
 
   if (!fontsLoaded) {
-    return <SplashScreen />; // load splash screen
+    return <SplashScreen />; // load splash screen <SplashScreen />
   }
+
   return (
     // <SafeAreaView>
     //   <Text>Hello</Text>
