@@ -1,22 +1,22 @@
 const COLORS = {
-  primary: "#F7BCAC",
-  secondary: "#7FEB7F",
-  tertiary: "#9DA39A",
+  primary: '#F7BCAC',
+  secondary: '#7FEB7F',
+  tertiary: '#9DA39A',
 
-  gray: "#83829A",
-  gray2: "#C1C0C8",
+  gray: '#83829A',
+  gray2: '#C1C0C8',
 
-  white: "#F3F4F8",
-  lightWhite: "#FAFAFC",
+  white: '#F3F4F8',
+  lightWhite: '#FAFAFC',
 
-  darkBackground: "#2C2E2F",
-  darkBorder: "#767A7F",
+  darkBackground: '#2C2E2F',
+  darkBorder: '#767A7F',
 };
 
 const FONT = {
-  regular: "DMRegular",
-  medium: "DMMedium",
-  bold: "DMBold",
+  regular: 'DMRegular',
+  medium: 'DMMedium',
+  bold: 'DMBold',
 };
 
 const SIZES = {
@@ -30,7 +30,7 @@ const SIZES = {
 
 const SHADOWS = {
   small: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -40,7 +40,7 @@ const SHADOWS = {
     elevation: 2,
   },
   medium: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,

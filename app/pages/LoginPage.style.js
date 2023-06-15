@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
-import { COLORS, FONT, SIZES } from "../constants";
+import { COLORS, FONT, SIZES } from '../constants';
 
 const styler = StyleSheet.create({
   container: {
-    width: "100%",
+    width: '100%',
     backgroundColor: COLORS.darkBackground,
   },
   username: {
@@ -41,9 +41,9 @@ const styler = StyleSheet.create({
     marginTop: 2,
   },
   searchContainer: {
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row",
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
     marginTop: SIZES.large,
     height: 50,
   },
@@ -51,12 +51,12 @@ const styler = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.darkBackground,
     marginRight: SIZES.small,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     borderRadius: SIZES.medium,
     borderWidth: 1,
     borderColor: COLORS.darkBorder,
-    height: "100%",
+    height: '100%',
   },
   searchInput: {
     backgroundColor: COLORS.darkBackground,
@@ -65,8 +65,8 @@ const styler = StyleSheet.create({
     borderColor: COLORS.darkBorder,
     color: COLORS.lightWhite,
     fontFamily: FONT.regular,
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
     paddingHorizontal: SIZES.medium,
   },
   signupButton: {
@@ -81,21 +81,21 @@ const styler = StyleSheet.create({
   },
   searchBtn: {
     width: 50,
-    height: "100%",
+    height: '100%',
     borderRadius: SIZES.medium,
     borderWidth: 1,
     borderColor: COLORS.lightWhite,
     color: COLORS.lightWhite,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   searchBtnImage: {
-    width: "50%",
-    height: "50%",
+    width: '50%',
+    height: '50%',
     tintColor: COLORS.darkBackground,
   },
   tabsContainer: {
-    width: "100%",
+    width: '100%',
     marginTop: SIZES.medium,
   },
   tab: (activeJobType, item) => ({
