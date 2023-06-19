@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { useFonts } from 'expo-font';
 import { Stack, SplashScreen } from 'expo-router';
 
-import { StyleSheet, SafeAreaView, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 import LoginPage from './app/pages/LoginPage';
 
 export default function App() {

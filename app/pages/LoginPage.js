@@ -1,6 +1,6 @@
 import styler from './LoginPage.style';
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 
 const LoginPage = () => {
   return (
