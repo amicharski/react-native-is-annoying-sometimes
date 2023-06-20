@@ -5,9 +5,16 @@ import font from '../constants/font';
 import sizes from '../constants/sizes';
 
 const styler = StyleSheet.create({
+  safeArea: {
+    backgroundColor: colors.darkBackground,
+  },
   container: {
     width: '100%',
+    height: '100%',
     backgroundColor: colors.darkBackground,
+  },
+  heading: {
+    alignItems: 'center',
   },
   username: {
     fontFamily: font.regular,

@@ -1,8 +1,10 @@
 import styler from "./LoginPage.style";
+import colors from '../constants/colors.js';
 
 import {
   StyleSheet,
   Text,
+  SafeAreaView,
   View,
   TextInput,
   TouchableOpacity,
@@ -10,10 +12,12 @@ import {
 
 const LoginPage = () => {
   return (
-    <View>
+    <SafeAreaView style={styler.safeArea}>
       <View style={styler.container}>
-        <Text style={styler.OneTwo}>One Two</Text>
-        <Text style={styler.welcomeMessage}>Find Your Perfect Match</Text>
+        <View style={styler.heading}>
+          <Text style={styler.OneTwo}>One Two</Text>
+          <Text style={styler.welcomeMessage}>Find Your Perfect Match</Text>
+        </View>
         <Text>{"\n"}</Text>
         <View style={styles.container}>
           <View style={styles.box}>
@@ -23,6 +27,7 @@ const LoginPage = () => {
                 <TextInput
                   style={styles.input}
                   placeholder="Username"
+                  placeholderTextColor={colors.secondary}
                   autoCapitalize="none"
                   required
                 />
@@ -32,6 +37,7 @@ const LoginPage = () => {
                 <TextInput
                   style={styles.input}
                   placeholder="Password"
+                  placeholderTextColor={colors.secondary}
                   secureTextEntry
                   required
                 />
@@ -55,7 +61,7 @@ const LoginPage = () => {
           </View>
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
