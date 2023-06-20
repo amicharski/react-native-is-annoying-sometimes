@@ -1,18 +1,18 @@
-import { useCallback } from 'react';
-import { useFonts } from 'expo-font';
-import { Stack, SplashScreen } from 'expo-router';
+import { useCallback } from "react";
+import { useFonts } from "expo-font";
+import { SplashScreen } from "expo-router";
+import { NavigationContainer } from "@react-navigation/native";
 
-import { StyleSheet } from 'react-native';
-import LoginPage from './app/pages/LoginPage';
+import { StyleSheet } from "react-native";
+
+import StackNavigation from "./app/router/StackNavigation";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    'DMBold': require('./assets/fonts/DMSans-Bold.ttf'),
-    'DMMedium': require('./assets/fonts/DMSans-Medium.ttf'),
-    'DMRegular': require('./assets/fonts/DMSans-Regular.ttf'),
+    DMBold: require("./assets/fonts/DMSans-Bold.ttf"),
+    DMMedium: require("./assets/fonts/DMSans-Medium.ttf"),
+    DMRegular: require("./assets/fonts/DMSans-Regular.ttf"),
   });
-
-  console.log(fontsLoaded);
 
   const onLayoutRootView = useCallback(async () => {
     if (fontsLoaded) {
@@ -25,25 +25,23 @@ export default function App() {
   }
 
   return (
-    // <SafeAreaView>
-    //   <Text>Hello</Text>
-    // </SafeAreaView>
-    <Stack.Navigator onLayout={onLayoutRootView}>
-      <Stack.Screen name='Login' component={LoginPage} />
-    </Stack.Navigator>
+    // <Navigation onLayout={onLayoutRootView} />
+    <NavigationContainer>
+      <StackNavigation onLayout={onLayoutRootView} />
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
     margin: 30,
   },
   regular: {
-    fontFamily: 'DMRegular',
+    fontFamily: "DMRegular",
     fontSize: 18,
-  }
+  },
 });
